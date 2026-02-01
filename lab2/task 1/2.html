@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook — вход (макет)</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Главный контейнер */
+    .page {
+      width: 100%;
+      max-width: 980px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    /* Левая часть */
+    .left {
+      max-width: 500px;
+    }
+
+    .logo {
+      color: #1877f2;
+      font-size: 56px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .left-text {
+      font-size: 26px;
+      line-height: 1.3;
+    }
+
+    /* Правая часть */
+    .right {
+      width: 396px;
+    }
+
+    .login-box {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 12px;
+      border: 1px solid #dddfe2;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 14px;
+      background-color: #1877f2;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .forgot {
+      display: block;
+      margin: 14px 0;
+      font-size: 14px;
+      color: #1877f2;
+      text-decoration: none;
+    }
+
+   
+
+    .create-btn {
+      display: inline-block;
+      padding: 12px 16px;
+      background-color: #42b72a;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .below-text {
+      margin-top: 20px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="left">
+      <div class="logo">facebook</div>
+      <div class="left-text">
+        Facebook помогает вам всегда<br>
+        оставаться на связи и общаться<br>
+        со своими знакомыми.
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="login-box">
+        <form onsubmit="return false;">
+          <input type="text" placeholder="Электронный адрес или номер телефона" />
+          <input type="password" placeholder="Пароль" />
+          <button class="login-btn">Вход</button>
+        </form>
+
+        <a href="#" class="forgot">Забыли пароль?</a>
+        <div class="divider"></div>
+        <hr>
+        <a href="#" class="create-btn">Создать новый аккаунт</a>
+      </div>
+
+      <div class="below-text">
+        <strong>Создать Страницу</strong> знаменитости, музыкальной группы или компании.
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
