@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+.left {
+    flex-basis: 57%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 3px solid #D3D3D3;
+}
+.right {
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+    padding: 50px;
+}
+.logo {
+    align-self: flex-start;
+    width: 75px;
+    height: 75px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.headline {
+    max-width: 70%;
+    font-size: 38px;
+    text-align: center;
+    line-height: 64.8px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.phone-image {
+    width: 600px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+}
+
+.login-box input {
+    width: 100%;
+}
+.login-box p {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.login-box input {
+    padding: 20px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+.forgot-link {
+    padding: 12px;
+    text-align: center;
+    font-size: 15px;
+    color: #0a1317;
+    text-decoration: none;
+    border-radius: 25px;
+}
+.login-btn {
+    background-color: #0064e0;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+}
+.fb-login {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 50px;
+    width: 100%;
+}
+.fb-login-btn {
+    padding: 12px;
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    background-color: white;
+}
+.create-btn {
+    padding: 12px;
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid #0064e0;
+    border-radius: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #0064e0;
+    background-color: white;
+}
+.login-btn:hover {
+    background-color: #0053b8;
+}
+.forgot-link:hover, .create-btn:hover, .fb-login-btn:hover {
+    background-color: #f0eeee;
+}
+.gradient {
+    background-image: linear-gradient(to right, #ff5c00, #ff0069, #d300c5);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+
