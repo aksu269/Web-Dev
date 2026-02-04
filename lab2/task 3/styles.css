@@ -1,0 +1,207 @@
+body {
+    font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.hero {
+    color: #1f2328;
+    font-size: 14px;
+    padding: 80px 16px 0 16px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+#cta {
+    margin: 24px 0 0 0;
+    padding: 16px 24px;
+    background-color: #1b1d23;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 550;
+    font-size: 16px;
+}
+#cta:hover {
+    background-color: #1b1d23;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+    cursor: pointer;
+}
+h1 {
+    font-size: 59px;
+    line-height: 68px;
+    font-weight: 900;
+}
+.description {
+    color: #59636e;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.desc {
+    margin: 40 0 0 0;
+    padding: 0 96px;
+}
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 36px;
+    margin-bottom: 80px;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+.card {
+    flex: 1;
+    margin: 32px 8px 8px;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    height: 100%;
+    display: block;
+    box-shadow: 0px 0px 0px 1px #d1d9e0, 0px 56px 112px 0px #25292e52;
+}
+.card-description {
+    text-align: center;
+    padding: 24px 16px;
+}
+h2 {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+.subhead {
+    color: #59636e;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 8px 0;
+    padding: 0 0 16px 0;
+}
+.price-symbol {
+    font-size: 20px;
+    vertical-align: top;
+}
+.price-value {
+    font-size: 48px;
+    font-weight: 500;
+}
+.currency {
+    font-size: 24px;
+    font-weight: 500;
+}
+.price-duration {
+    color: #59636e;
+    font-size: 16px;
+    vertical-align:super;
+}
+
+.select-plan {
+    padding: 16px 24px;
+    color:#1f2328;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.select-plan.black {
+    background-color: #1b1d23;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+    color: #ffffff;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+}
+.select-plan.white:hover {
+    border: 2px solid #1b1d23;
+}
+.select-plan.black:hover {
+    background-color: #1b1d23;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.pricing-features{
+    padding: 8px 16px;
+    background-color: #f6f8fa;
+    color:#59636e;
+    text-align: left;
+    border-radius: 8px;
+}
+.pricing-features li {
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.pricing-features li::before {
+    content: "› ";
+    color: #0969DA;
+}
+
+.pricing-features ul {
+    margin: 0;
+    padding: 0 0 0 16px;
+}
+.two-buttons {
+    display: flex;
+    gap: 10px;
+}
+.two-buttons.select-plan {
+    width: 50%;
+}
+.subdesc {
+    color: #898f96;
+    font-size: 12px;
+}
+.adds {
+    color: #0969DA;
+    margin: 24px 0 0;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 6px;
+}
+.addons {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.addons h1 {
+    text-align: center;
+    font-size: 59px;
+    margin: 60px 0;
+    font-weight: 900;
+}
+.cards-addons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 24px;
+}
+
+.card-addons {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    min-height: 180px;
+    border: 1px solid #d0d7de;
+    font-weight: 600;
+    color:#1f2328;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+.card-addons:hover {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.card-addons p {
+    color:#59636e;
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+    .cards-addons {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 768px) {
+    .pricing-cards {
+        flex-direction: column;
+    }
+}
