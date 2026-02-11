@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function Calculator() {
+                this.sum = function() {
+                    return this.a + this.b;
+                }
+                this.mul = function() {
+                    return this.a * this.b;
+                }
+                this.read = function() {
+                    this.a = +prompt('a?', '');
+                    this.b = +prompt('b?', '');
+                }
+            }
+            let calculator = new Calculator();
+            calculator.read();
+            alert(calculator.mul());
+        </script>
+    </body>
+</html>

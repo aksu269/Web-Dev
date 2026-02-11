@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let arr = new Array();
+            let n = Number(prompt("Enter a number"));
+            arr.length = n;
+            arr.fill(true);
+            arr[0] = false;
+            arr[1] = false;
+            for (let i = 2; i * i <= n; i++) {
+                if (arr[i]) {
+                    for (let j = i * i; j <= n; j += i) {
+                        arr[j] = false;
+                    }
+                }
+            }
+            for (let i = 0; i <= n; i++) {
+                if (arr[i]) alert(i);
+            }
+        </script>
+    </body>
+</html>

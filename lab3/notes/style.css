@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #222;
+    padding: 24px 64px;
+}
+.header-logo {
+    color: #88827F;
+    font-size: 24px;
+}
+
+.tasks-list {
+    list-style-type: none;
+    border: 1px solid #000;
+}
+
+.tasks-list .tasks-item:first-of-type {
+    border-top: none;
+}
+
+.tasks-item {
+    padding: 16px;
+    border-top: 1px solid #000;
+}
+.tasks-item-checked {
+    text-decoration: line-through;
+}
