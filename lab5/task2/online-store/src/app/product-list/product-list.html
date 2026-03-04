@@ -1,0 +1,11 @@
+<div class="product-list">
+  @if (filteredProducts().length === 0) {
+    <div class="empty">No products in this category</div>
+  } @else {
+    <div class="grid">
+      @for (item of filteredProducts(); track item.id) {
+        <app-product-item [product]="item" (remove)="handleDelete(item.id)" />
+      }
+    </div>
+  }
+</div>
