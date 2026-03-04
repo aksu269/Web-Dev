@@ -1,0 +1,12 @@
+<h2>Albums Catalog</h2>
+    @if (isLoading()) { <p>Loading albums...</p> }
+
+    <div class="album-list">
+      @for (album of albums(); track album.id) {
+        <div class="album-card">
+          <span class="id">#{{ album.id }}</span>
+          <a [routerLink]="['/albums', album.id]" class="title">{{ album.title }}</a>
+          <button (click)="onDelete(album.id)" class="del-btn">Delete</button>
+        </div>
+      }
+    </div>
