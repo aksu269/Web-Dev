@@ -1,0 +1,14 @@
+n = int(input())
+arr = list(map(int, input().split()))
+c = False
+for i in range(n - 1):
+    if arr[i] > 0 and arr[i + 1] > 0:
+        c = True
+        break
+    elif arr[i] < 0 and arr[i + 1] < 0:
+        c = True
+        break
+if c:
+    print("YES")
+else:
+    print("NO")
