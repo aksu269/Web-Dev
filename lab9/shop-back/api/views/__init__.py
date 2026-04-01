@@ -1,0 +1,1 @@
+from .new_view import CategoryViewSet, ProductViewSet
